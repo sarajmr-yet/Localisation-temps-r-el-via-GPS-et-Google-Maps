@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TrackingApp</string>
+    <string name="gps_enabled">GPS activé : %s</string>
+    <string name="gps_disabled">GPS désactivé : %s</string>
+    <string name="gps_status">Statut GPS %1$s : %2$s</string>
+    <string name="location_update">Lat: %1$s | Lon: %2$s | Alt: %3$s m | Précision: %4$s m</string>
+</resources>
