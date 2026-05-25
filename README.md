@@ -4,7 +4,7 @@
 
 ---
 
-## 🗄️ Partie 1 — Base de données MySQL
+##  Partie 1 — Base de données MySQL
 
 ### Étape 1.1 — Création de la base
 Créer une base nommée `localisation` depuis phpMyAdmin.
@@ -19,11 +19,11 @@ CREATE TABLE `position` (
   `imei` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
-✅ `SELECT * FROM position;` retourne vide → base prête.
+ `SELECT * FROM position;` retourne vide → base prête.
 
 ---
 
-## 🐘 Partie 2 — Backend PHP
+##  Partie 2 — Backend PHP
 
 ### Arborescence
 ```
@@ -58,15 +58,9 @@ Interface imposant : `insert`, `modify`, `remove`, `findById`, `fetchAll`.
 - Requête POST
 - Retourne JSON : `{"ok": true, "locations": [...]}`
 
-✅ **Test Postman :**
 
-![Postman saveLocation](captures/capture_postman_saveLocation.png)
 
-![Postman getLocations](captures/capture_postman_getLocations.png)
-
----
-
-## 📱 Partie 3 — Android (GPS + Volley)
+##  Partie 3 — Android (GPS + Volley)
 
 ### Étape 3.1 — Projet Android Studio
 Nom du projet : `TrackingApp` — Empty Activity.
@@ -90,13 +84,13 @@ implementation 'com.android.volley:volley:1.2.1'
 
 ### Étape 3.5 — Résultat sur l'émulateur
 
-![Android GPS](captures/capture_android_gps.png)
+![Android GPS](capture_android_gps.png)
 
-✅ Toast visible avec lat/lon | `tvStatus` affiche "Envoyé ✓"
+ Toast visible avec lat/lon | `tvStatus` affiche "Envoyé ✓"
 
 ---
 
-## 🗺️ Partie 4 — Google Maps Activity
+##  Partie 4 — Google Maps Activity
 
 ### Étape 4.1 — Création de `MapActivity`
 Android Studio → New → Google Maps Activity.
@@ -110,13 +104,13 @@ Clé API configurée dans `google_maps_api.xml`.
 
 ---
 
-## 🗃️ Données en base (phpMyAdmin)
+##  Données en base (phpMyAdmin)
 
-![phpMyAdmin table position](captures/capture_phpmyadmin_position.png)
+![phpMyAdmin table position](capture_phpmyadmin_position.png)
 
 ---
 
-## ✅ Checkpoints de validation
+##  Checkpoints de validation
 
 | Étape | Résultat |
 |---|---|
